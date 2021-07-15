@@ -1,0 +1,17 @@
+{
+  "name": "@harnessflex/helpers",
+  "version": "0.0.1",
+  "description": "Helper function for Harness",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "imbac src --output=lib --platform=node",
+    "watch": "imbac -w src --output=lib --platform=node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Donald Pakkies",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "imba": "^2.0.0-alpha.155"
+  }
+}
