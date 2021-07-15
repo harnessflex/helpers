@@ -32,13 +32,13 @@ object_dot test, 'app.name' // Harness
 ### API
 
 
-Helper      | Params                              | Description
-:-----------|:------------------------------------|:----------
-config      | `notation: string`                  | Get config value.
-env         | `key: string, default: string/null` | Get env value.
-object_dot  | `object: object, key: string`       | Get value from object.
-slug        | `value: string, separator: string`  | Turn string into a slug.
-toBoolean   | `value: mixed`                      | Convert value into boolean.
+Helper      | Params                                   | Description
+:-----------|:-----------------------------------------|:----------
+config      | `notation: string, default: string/null` | Get config value.
+env         | `key: string, default: string/null`      | Get env value.
+object_dot  | `object: object, key: string`            | Get value from object.
+slug        | `value: string, separator: string`       | Turn string into a slug.
+toBoolean   | `value: mixed`                           | Convert value into boolean.
 
 > This is a wip
 
