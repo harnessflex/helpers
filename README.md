@@ -4,7 +4,9 @@ Harness Helpers
 Helper functions for Harness.
 
 ![Status](https://github.com/harnessflex/helpers/actions/workflows/test.yml/badge.svg)
-![Statements](https://img.shields.io/badge/statements-97.94%25-brightgreen.svg) ![Branches](https://img.shields.io/badge/branches-92.45%25-brightgreen.svg) ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg) ![Lines](https://img.shields.io/badge/lines-97.94%25-brightgreen.svg)
+![Statements](https://img.shields.io/badge/statements-97.94%25-brightgreen.svg)
+![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg)
+![Lines](https://img.shields.io/badge/lines-97.94%25-brightgreen.svg)
 ## Install
 
 This package is automatically installed with the Harness Flex Framework.
