@@ -1,0 +1,20 @@
+name: Tests Coverage
+
+on: push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+    - name: Install modules
+      run: npm install
+    - name: Tests coverage
+      run: npm test:ci
+    - name: Generating coverage badges
+      uses: actions/jest-badges-action@latest
+        with:
+          branches: main
