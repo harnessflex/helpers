@@ -6,10 +6,12 @@ jobs:
   bump:
 
     runs-on: ubuntu-latest
-    steps:
 
+    steps:
     - name: Check out repository code
       uses: actions/checkout@v2
+    - name: Install modules
+      run: npm install
     - name: Tests coverage
       run: npm test:ci
     - name: Generating coverage badges
