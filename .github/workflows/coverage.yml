@@ -13,6 +13,6 @@ jobs:
     - name: Install modules
       run: npm install
     - name: Run tests coverage
-      run: npm test:cov
+      run: npm test:cov && npm run make-badges
       with:
         branches: main,dev
