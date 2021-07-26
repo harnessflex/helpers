@@ -1,9 +1,11 @@
-module.exports = def slug value\string, separator\string = '-'
-	if typeof value !== 'string'
-		throw new Error "{value} is not a valid string"
+const is_string = require './is_string'
 
-	if typeof separator !== 'string'
-		throw new Error "{separator} is not a valid string"
+module.exports = def slug value\string, separator\string = '-'
+	if !is_string value
+		throw new TypeError 'value must be a string'
+
+	if !is_string separator
+		throw new TypeError 'separator must be a string'
 
 	value
 		.normalize('NFD')
