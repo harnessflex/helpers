@@ -3,7 +3,7 @@ name: Tests Coverage
 on: push
 
 jobs:
-  build:
+  bump:
 
     runs-on: ubuntu-latest
 
@@ -17,4 +17,4 @@ jobs:
     - name: Generating coverage badges
       uses: actions/jest-badges-action@latest
         with:
-          branches: main
+          branches: main,dev
