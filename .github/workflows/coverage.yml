@@ -16,5 +16,5 @@ jobs:
       run: npm test:ci
     - name: Generating coverage badges
       uses: actions/jest-badges-action@latest
-        with:
-          branches: main,dev
+      with:
+        branches: main,dev
