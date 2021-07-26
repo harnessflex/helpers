@@ -3,6 +3,10 @@ Harness Helpers
 
 Helper functions for Harness.
 
+| Statements                  | Branches                | Functions                 | Lines             |
+| --------------------------- | ----------------------- | ------------------------- | ----------------- |
+| ![Statements](#statements#) | ![Branches](#branches#) | ![Functions](#functions#) | ![Lines](#lines#) |
+
 ## Install
 
 This package is automatically installed with the Harness Flex Framework.
