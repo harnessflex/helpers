@@ -5,7 +5,7 @@ Helper functions for Harness.
 
 | Statements                  | Branches                | Functions                 | Lines             |
 | --------------------------- | ----------------------- | ------------------------- | ----------------- |
-| ![Statements](#statements#) | ![Branches](#branches#) | ![Functions](#functions#) | ![Lines](#lines#) |
+| ![Statements](https://img.shields.io/badge/statements-97.94%25-brightgreen.svg) | ![Branches](https://img.shields.io/badge/branches-92.45%25-brightgreen.svg) | ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg) | ![Lines](https://img.shields.io/badge/lines-97.94%25-brightgreen.svg) |
 
 ## Install
 
