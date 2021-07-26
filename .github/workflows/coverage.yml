@@ -3,7 +3,7 @@ name: Tests Coverage
 on: push
 
 jobs:
-  bump:
+  build:
 
     runs-on: ubuntu-latest
 
