@@ -12,9 +12,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Install modules
       run: npm install
-    - name: Tests coverage
-      run: npm test:ci
-    - name: Generating coverage badges
-      uses: actions/jest-badges-action@latest
-        with:
-          branches: main,dev
+    - name: Run tests coverage
+      run: npm test:cov && npm run make-badges
+      with:
+        branches: main,dev

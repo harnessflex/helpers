@@ -12,19 +12,24 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "test:ci": "jest --ci --runInBand --coverage"
+    "test:ci": "jest --ci --runInBand --coverage",
+    "make-badges": "istanbul-badges-readme"
   },
   "author": "Donald Pakkies",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "imba": "^2.0.0-alpha.155"
+    "imba": "^2.0.0-alpha.155",
+    "istanbul-badges-readme": "^1.4.0"
   },
   "devDependencies": {
+    "husky": "^7.0.1",
     "jest": "^27.0.6",
     "typescript": "^4.3.5"
   },
   "jest": {
-    "coverageReporters": ["json-summary"]
+    "coverageReporters": [
+      "json-summary"
+    ]
   }
 }
