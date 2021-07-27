@@ -4,9 +4,9 @@ Harness Helpers
 Helper functions for Harness.
 
 ![Status](https://github.com/harnessflex/helpers/actions/workflows/test.yml/badge.svg)
-![Statements](https://img.shields.io/badge/statements-97.94%25-brightgreen.svg)
+![Statements](https://img.shields.io/badge/statements-97.75%25-brightgreen.svg)
 ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg)
-![Lines](https://img.shields.io/badge/lines-97.94%25-brightgreen.svg)
+![Lines](https://img.shields.io/badge/lines-97.75%25-brightgreen.svg)
 ## Install
 
 This package is automatically installed with the Harness Flex Framework.
@@ -19,7 +19,7 @@ npm i @harnessflex/helpers
 
 ```js
 
-import { object_dot, slug } from '@harnessflex/helpers'
+import { dotNotation, slug } from '@harnessflex/helpers'
 
 slug 'hello world', '-' // hello-world
 
@@ -29,7 +29,7 @@ const test = {
     }
 }
 
-object_dot test, 'app.name' // Harness
+dotNotation test, 'app.name' // Harness
 
 ```
 
@@ -39,17 +39,15 @@ object_dot test, 'app.name' // Harness
 Helper         | Params                                   | Description
 :--------------|:-----------------------------------------|:----------
 `config`       | `notation: string, default: string/null` | Get config value.
-`dot_notation` | `object: object, notation: string`       | Get config value.
+`dotNotation`  | `object: object, notation: string`       | Get config value.
 `env`          | `key: string, default: string/null`      | Get env value.
-`is_array`     | `value: mixed`                           | Check if value is an array.
-`is_boolean`   | `value: mixed`                           | Check if value is a boolean.
-`is_function`  | `value: mixed`                           | Check if value is a function.
-`is_number`    | `value: mixed`                           | Check if value is a number.
-`is_object`    | `value: mixed`                           | Check if value is an object.
-`is_string`    | `value: mixed`                           | Check if value is a string.
-`object_dot`   | `object: object, notation: string`       | Get value from object.
+`isArray`      | `value: mixed`                           | Check if value is an array.
+`isBoolean`    | `value: mixed`                           | Check if value is a boolean.
+`isFunction`   | `value: mixed`                           | Check if value is a function.
+`isNumber`     | `value: mixed`                           | Check if value is a number.
+`isObject`     | `value: mixed`                           | Check if value is an object.
+`isString`     | `value: mixed`                           | Check if value is a string.
 `slug`         | `value: string, separator: string`       | Turn string into a slug.
-`to_boolean`   | `value: mixed`                           | Convert value into boolean.
 `toBoolean`    | `value: mixed`                           | Convert value into boolean.
 
 > This is a wip

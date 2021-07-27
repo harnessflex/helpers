@@ -1,10 +1,10 @@
-const is_string = require './is_string'
+const isString = require './isString'
 
 module.exports = def slug value\string, separator\string = '-'
-	if !is_string value
+	if !isString value
 		throw new TypeError 'value must be a string'
 
-	if !is_string separator
+	if !isString separator
 		throw new TypeError 'separator must be a string'
 
 	value

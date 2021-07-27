@@ -1,2 +1,2 @@
-module.exports = def is_array object
+module.exports = def isArray object
 	object !== undefined && object !== null && object.constructor == Array

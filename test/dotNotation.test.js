@@ -1,4 +1,4 @@
-const { object_dot } = require('../lib');
+const { dotNotation } = require('../lib');
 
 const object = {
   test: {
@@ -6,23 +6,23 @@ const object = {
   }
 };
 
-describe('Test the object_dot helper method', () => {
+describe('Test the dotNotation helper method', () => {
 
   test('Should return Hello world', (done) => {
-    expect(object_dot(object, 'test.string')).toBe('Hello world');
+    expect(dotNotation(object, 'test.string')).toBe('Hello world');
 
     done();
   });
 
   test('Should return null if the key does not exist', (done) => {
-    expect(object_dot(object, 'test.string2')).toBe(null);
+    expect(dotNotation(object, 'test.string2')).toBe(null);
 
     done();
   });
 
   test('Should throw an error if the object is not a valid object', (done) => {
     expect(() => {
-      object_dot(null, 'test.string');
+      dotNotation(null, 'test.string');
     }).toThrow(TypeError);
 
     done();
@@ -30,7 +30,7 @@ describe('Test the object_dot helper method', () => {
 
   test('Should throw an error if the key is not a valid string notation', (done) => {
     expect(() => {
-      object_dot(object, null);
+      dotNotation(object, null);
     }).toThrow(TypeError);
 
     done();

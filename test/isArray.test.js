@@ -1,15 +1,15 @@
-const { is_array } = require('../lib');
+const { isArray } = require('../lib');
 
-describe('Test the is_array helper method.', () => {
+describe('Test the isArray helper method.', () => {
 
   test('Should return true if object is an array', (done) => {
-    expect(is_array([])).toBe(true);
+    expect(isArray([])).toBe(true);
 
     done();
   });
 
   test('Should return false if object is not an array', (done) => {
-    expect(is_array({})).toBe(false);
+    expect(isArray({})).toBe(false);
 
     done();
   });
