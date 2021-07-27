@@ -1,15 +1,15 @@
-const { is_object } = require('../lib');
+const { isObject } = require('../lib');
 
-describe('Test the is_object helper method.', () => {
+describe('Test the isObject helper method.', () => {
 
   test('Should return true if object is a valid object', (done) => {
-    expect(is_object({})).toBe(true);
+    expect(isObject({})).toBe(true);
 
     done();
   });
 
   test('Should return false if object is not a valid object', (done) => {
-    expect(is_object(null)).toBe(false);
+    expect(isObject(null)).toBe(false);
 
     done();
   });

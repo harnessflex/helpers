@@ -1,2 +1,2 @@
-module.exports = def is_object object
+module.exports = def isObject object
 	object !== undefined && object !== null && object.constructor == Object

@@ -1,5 +1,5 @@
 const path = require 'path'
-const object_dot = require './object_dot'
+const dotNotation = require './dotNotation'
 const ConfigNotCachedError = require './Error/ConfigNotCachedError'
 
 module.exports = def config notation\string, default\string = null
@@ -8,6 +8,6 @@ module.exports = def config notation\string, default\string = null
 	try
 		const config = require location
 
-		object_dot(config, notation) ?? default
+		dotNotation(config, notation) ?? default
 	catch e
 		throw new ConfigNotCachedError

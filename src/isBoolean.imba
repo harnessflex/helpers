@@ -1,2 +1,2 @@
-module.exports = def is_boolean object
+module.exports = def isBoolean object
 	object !== undefined && object !== null && object.constructor == Boolean
